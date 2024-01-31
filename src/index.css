@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  background-color: blanchedalmond;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  gap: 3rem;
+  flex-direction: column;
+}
+
+.header {
+  text-align: center;
+  padding: 25px;
+  font-size: 2.3rem;
+  font-weight: 900;
+  letter-spacing: 5px;
+  color: rgb(69, 65, 26);
+  width: 70%;
+  border-bottom: 3.5px solid burlywood;
+}
+
+.menu {
+  max-width: 80vw;
+  display: grid;
+  align-items: center;
+  gap: 5.5rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.menuEmpty {
+  height: 70vh;
+  font-size: 1.7rem;
+  padding: 2rem;
+  display: flex;
+  color: rgb(91, 58, 22);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.card {
+  max-width: 17rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: aliceblue;
+  border-radius: 8px;
+  box-shadow: 9px 10px 2px 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 9px 10px 2px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 9px 10px 2px 0px rgba(0, 0, 0, 0.15);
+}
+
+.cardImg {
+  width: 80%;
+  aspect-ratio: 0.8;
+  align-self: center;
+}
+
+.cardName {
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.cardDescr {
+}
+
+.cardPrice {
+  font-size: 20px;
+  display: flex;
+  align-self: end;
+}
+
+.footerContainer {
+  width: 100%;
+}
+
+.order {
+  padding: 4rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.orderText {
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin-bottom: 1.2rem;
+  font-style: italic;
+}
+
+.orderButton {
+  padding: 9px 30px;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  background-color: white;
+  transition: 0.2s ease-in-out;
+}
+
+.orderButton:hover {
+  background-color: burlywood;
+  color: white;
+  border: none;
+}
+
+.footer {
+  padding: 1.2rem;
+  background-color: rgb(91, 58, 22);
+  color: white;
+  letter-spacing: 4px;
+  font-size: 19px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .menu {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .menuEmpty {
+    font-size: 1.5rem;
+  }
+
+  .order {
+    padding-top: 1rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    font-size: 2rem;
+  }
+
+  .menu {
+    grid-template-columns: 1fr;
+  }
+  .orderText {
+    font-size: 1.4rem;
+  }
+}
